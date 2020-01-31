@@ -110,7 +110,6 @@ function getInfo(graduates) {
 getInfo(graduates);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-console.log(unisWithUni);
 
 function getUni(graduates) {
   const unisWithUni = graduates.filter(function(item) {
