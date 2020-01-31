@@ -99,15 +99,28 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 
+function getInfo(graduates) {
+  const contactInfo = graduates.map(function(item) {
+    return `${item.first_name} ${item.email}`;
+  });
+  console.log(contactInfo);
+  return contactInfo;
+}
 
-
-const contactInfo = [];
-console.log(contactInfo);
+getInfo(graduates);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
 console.log(unisWithUni);
 
+function getUni(graduates) {
+  const unisWithUni = graduates.filter(function(item) {
+    if (item.university.includes('Uni')) {
+      return item.university;
+    }
+  });
+  console.log(unisWithUni);
+  return unisWithUni;
+}
 
 // ==== ADVANCED Array Methods ====
 
